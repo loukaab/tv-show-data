@@ -14,4 +14,8 @@ eshows = shows[shows["vote_count"] > 1000]
 #ratings = eshows[eshows["vote_average"]]
 
 plt.scatter(eshows["number_of_seasons"], eshows["vote_average"], alpha=0.3)
+plt.xlabel("Number of Seasons")
+plt.ylabel("Average Rating")
+plt.title("Average TV Series Rating vs Number of Seasons")
+
 plt.show()
